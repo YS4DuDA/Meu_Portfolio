@@ -18,6 +18,8 @@
                 <li><a href="#hero">HOME</a></li>
                 <li><a href="#sobre">SOBRE</a></li>
                 <li><a href="#formacao">FORMAÇÃO</a></li>
+                <li><a href="#competencias">COMPETÊNCIAS</a></li>
+                <li><a href="#cursos">CURSOS</a></li>
                 <li><a href="#projetos">PROJETOS</a></li>
             </ul>
             <div class="social-icons">
@@ -44,19 +46,15 @@
     <section id="sobre" class="about-section">
         <div class="about-container">
             <div class="about-photos-grid">
-                <div class="photo-card"><img src="{{ url_for('static', filename='YS4DuDa2.png') }}"></div>
-                <div class="photo-card"><img src="{{ url_for('static', filename='dragon_programer.png') }}"></div>
-                <div class="photo-card"><img src="{{ url_for('static', filename='Apresentação.png') }}"></div>
+                <div class="photo-card"><img src="{{ url_for('static', filename='YS4DuDA2.png') }}" alt="Maysa Eduarda"></div>
+                <div class="photo-card"><img src="{{ url_for('static', filename='dragon_programer.png') }}" alt="Dragão Programador"></div>
+                <div class="photo-card"><img src="{{ url_for('static', filename='Apresentação.png') }}" alt="Apresentação"></div>
             </div>
             <div class="about-text">
                 <span class="badge">Perfil Profissional</span>
                 <h2 class="section-title">Muito prazer, sou a Maysa.</h2>
-                <p>
-                    Atuo no mercado de tecnologia focada na convergência entre <strong>infraestrutura de redes</strong> e <strong>desenvolvimento de software</strong>. Com experiência em ambientes de alta demanda, desenvolvi uma visão estratégica para resolução de problemas técnicos complexos.
-                </p>
-                <p>
-                    Minha abordagem combina o rigor técnico da manutenção de redes com a agilidade do desenvolvimento em Python para automação de processos, visando sempre a eficiência operacional.
-                </p>
+                <p>A minha paixão e o meu grande foco na tecnologia é o desenvolvimento de software. Dedico-me continuamente à criação de projetos Full Stack, utilizando principalmente Python para construir aplicações web, resolver problemas do dia a dia e automatizar processos.</p>
+                <p>Atualmente, também atuo na área de suporte de TI numa indústria de grande porte, o que me trouxe uma base sólida e conhecimentos práticos em infraestrutura e redes.</p>
                 <div class="about-buttons">
                     <a href="https://wa.me/5544999213541" target="_blank" class="btn-main">WhatsApp</a>
                     <a href="mailto:mayeduardalada@gmail.com" class="btn-outline">E-mail</a>
@@ -72,17 +70,99 @@
             <div class="service-card">
                 <i class="fas fa-code"></i>
                 <h3>Sistemas</h3>
-                <p>Análise e Desenv. de Sistemas (2026). Foco em engenharia de software.</p>
+                <p>Análise e Desenvolvimento de Sistemas. Foco em engenharia de software.</p>
+                <p><strong>Instituição:</strong> Centro Integrado de Campo Mourão, PR</p>
             </div>
             <div class="service-card">
                 <i class="fas fa-network-wired"></i>
                 <h3>Infraestrutura</h3>
-                <p>Redes de Computadores (2027). Especialização em conectividade e segurança.</p>
+                <p>Redes de Computadores. Especialização em conectividade e segurança.</p>
+                <p><strong>Instituição:</strong> Cruzeiro do Sul (EAD)</p>
             </div>
             <div class="service-card">
-                <i class="fas fa-headset"></i>
-                <h3>Suporte Técnico</h3>
-                <p>Service Desk especializado com sólida base em hardware e sistemas.</p>
+                <i class="fas fa-laptop-code"></i>
+                <h3>Desenvolvimento Full Stack</h3>
+                <p>Formação completa em desenvolvimento web, unindo front-end e back-end.</p>
+                <p><strong>Instituição:</strong> Cruzeiro do Sul (EAD)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="competencias" class="competencias-section">
+        <div class="about-container competencias-wrapper">
+            <div class="competencias-text">
+                <span class="badge">Habilidades</span>
+                <h2 class="section-title" style="text-align: left;">Minhas Competências</h2>
+                <div class="competencias-cards-list">
+                    <div class="service-card mini-card">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <h3>Desenvolvimento</h3>
+                            <p>HTML, CSS, JavaScript, TypeScript, React, Python e integração com APIs.</p>
+                            <div class="tech-icons">
+                                <i class="fab fa-html5" title="HTML5" style="color: #E34F26;"></i>
+                                <i class="fab fa-css3-alt" title="CSS3" style="color: #1572B6;"></i>
+                                <i class="fab fa-js" title="JavaScript" style="color: #F7DF1E;"></i>
+                                <span class="ts-badge" title="TypeScript">TS</span>
+                                <i class="fab fa-react" title="React" style="color: #61DAFB;"></i>
+                                <i class="fab fa-python" title="Python" style="color: #3776AB;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card mini-card">
+                        <i class="fas fa-desktop"></i>
+                        <div>
+                            <h3>TI & Suporte</h3>
+                            <p>Suporte técnico, manutenção de computadores, redes básicas e Service Desk.</p>
+                        </div>
+                    </div>
+                    <div class="service-card mini-card">
+                        <i class="fas fa-file-excel"></i>
+                        <div>
+                            <h3>Ferramentas</h3>
+                            <p>Domínio do Pacote Office e planilhas eletrónicas para organização e análise de dados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="competencias-photos">
+                <div class="photo-card"><img src="{{ url_for('static', filename='Infraestrutura.jpg') }}" alt="Trabalhando"></div>
+                <div class="photo-card"><img src="{{ url_for('static', filename='Coding.jpg') }}" alt="Setup ou Código"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cursos" class="services-section">
+        <span class="badge">Educação Contínua</span>
+        <h2 class="section-title">Cursos Complementares & Idiomas</h2>
+        <div class="courses-container">
+            <div class="language-card">
+                <i class="fas fa-language"></i>
+                <div>
+                    <h3>Idioma</h3>
+                    <p><strong>Inglês:</strong> Nível Intermediário (KNN Idiomas)</p>
+                </div>
+            </div>
+            <div class="courses-list">
+                <ul>
+                    <li><i class="fas fa-desktop"></i> Informática Básica</li>
+                    <li><i class="fas fa-file-excel"></i> Planilhas Eletrônicas</li>
+                    <li><i class="fas fa-award"></i> Ferramentas da Qualidade</li>
+                    <li><i class="fas fa-user-tie"></i> Conceitos de Liderança</li>
+                    <li><i class="fas fa-handshake"></i> Excelência no Atendimento e Trabalho em Equipe</li>
+                    <li><i class="fas fa-list-check"></i> Organização e Preparação para o Trabalho</li>
+                    <li><i class="fas fa-arrow-trend-up"></i> Aprimoramento Profissional</li>
+                    <li><i class="fas fa-calculator"></i> Fundamentos da Contabilidade e Custos</li>
+                    <li><i class="fas fa-lightbulb"></i> Gestão de Marketing, Vendas e Empreendedorismo</li>
+                    <li><i class="fas fa-truck-fast"></i> Operações Logísticas</li>
+                    <li><i class="fas fa-industry"></i> Planejamento de Produção</li>
+                    <li><i class="fas fa-warehouse"></i> Processos Produtivos e Estocagem</li>
+                    <li><i class="fas fa-recycle"></i> Logística Reversa e Sustentável</li>
+                    <li><i class="fas fa-scale-balanced"></i> Ética, Cidadania e Meio Ambiente</li>
+                    <li><i class="fas fa-helmet-safety"></i> Saúde e Segurança do Trabalho</li>
+                    <li><i class="fas fa-square-root-variable"></i> Fundamentos da Matemática</li>
+                    <li><i class="fas fa-comments"></i> Fundamentos de Comunicação Oral e Escrita</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -98,11 +178,10 @@
                 <div class="project-tags"><span>WMS</span><span>Gestão</span></div>
                 <a href="https://github.com/YS4DuDA/Controle_Operacional_MagistralInovatech-Gestao-de-Ativos" target="_blank" class="btn-project">Ver no GitHub <i class="fas fa-external-link-alt"></i></a>
             </div>
-
             <div class="project-card">
                 <div class="project-icon"><i class="fas fa-truck-ramp-box"></i></div>
                 <h3>Sistema P/ Indústria Frigorífica</h3>
-                <p>Solução para gestão de embarque e descanso pré-abate, garantindo conformidade com normas de bem-estar animal e logística industrial.</p>
+                <p>Solução para gestão de embarque e descanso pré-abate, garantindo conformidade com normas de bem-estar animal.</p>
                 <div class="project-tags"><span>Logística</span><span>Compliance</span></div>
                 <a href="https://github.com/YS4DuDA/Controle_Operacional_Magistral" target="_blank" class="btn-project">Ver no GitHub <i class="fas fa-external-link-alt"></i></a>
             </div>
