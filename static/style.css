@@ -1,30 +1,21 @@
-/* ============================================================
-   VARIÁVEIS E CONFIGURAÇÕES GERAIS
-   ============================================================ */
 :root {
     --bg-color: #f8fafc;
     --text-dark: #1e293b;
     --brand-blue: #002E5D;
     --white: #ffffff;
 }
-
 * { 
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
     scroll-behavior: smooth; 
 }
-
 body { 
     background-color: var(--bg-color); 
     font-family: 'Inter', sans-serif; 
     color: var(--text-dark); 
     line-height: 1.6;
 }
-
-/* ============================================================
-   NAVBAR (AMPLIADA)
-   ============================================================ */
 .navbar-container { 
     position: fixed; 
     width: 100%; 
@@ -34,7 +25,6 @@ body {
     justify-content: center; 
     padding: 0 5%; 
 }
-
 .navbar { 
     background: var(--white); 
     width: 100%; 
@@ -46,24 +36,20 @@ body {
     border-radius: 20px; 
     box-shadow: 0 12px 40px rgba(0,0,0,0.12); 
 }
-
 .logo { 
     font-family: 'Montserrat', sans-serif; 
     font-size: 2.2rem; 
     font-weight: 700;
 }
-
 .logo span { 
     font-weight: 800; 
     color: var(--brand-blue); 
 }
-
 .nav-links { 
     display: flex; 
     list-style: none; 
     gap: 45px; 
 }
-
 .nav-links a { 
     text-decoration: none; 
     color: var(--text-dark); 
@@ -71,30 +57,22 @@ body {
     font-size: 1.2rem; 
     transition: 0.3s;
 }
-
 .nav-links a:hover { 
     color: var(--brand-blue); 
 }
-
 .social-icons {
     display: flex;
     gap: 25px;
 }
-
 .social-icons a { 
     color: var(--text-dark); 
     font-size: 1.6rem; 
     transition: 0.3s; 
 }
-
 .social-icons a:hover { 
     color: var(--brand-blue); 
     transform: translateY(-3px); 
 }
-
-/* ============================================================
-   HERO (HOME)
-   ============================================================ */
 .hero-section { 
     display: flex; 
     align-items: center; 
@@ -121,7 +99,6 @@ body {
     line-height: 1.1; 
     margin-bottom: 40px; 
 }
-
 .btn-main { 
     background-color: var(--brand-blue); 
     color: var(--white); 
@@ -133,25 +110,18 @@ body {
     transition: 0.3s; 
     display: inline-block;
 }
-
 .btn-main:hover { 
     transform: translateY(-5px); 
     box-shadow: 0 10px 20px rgba(0,46,93,0.2); 
 }
-
 .hero-image img { 
     max-width: 600px; 
     filter: drop-shadow(0 15px 30px rgba(0,0,0,0.1)); 
 }
-
-/* ============================================================
-   SOBRE & MOSAICO (ALINHADO)
-   ============================================================ */
 .about-section { 
     background-color: var(--white); 
     padding: 140px 10%; 
 }
-
 .about-container { 
     max-width: 1300px; 
     margin: 0 auto; 
@@ -167,14 +137,12 @@ body {
     grid-template-rows: repeat(2, 280px); 
     gap: 20px; 
 }
-
 .photo-card { 
     border-radius: 20px; 
     overflow: hidden; 
     box-shadow: 0 8px 25px rgba(0,0,0,0.05); 
     height: 100%;
 }
-
 .photo-card:nth-child(1) { grid-row: span 2; }
 
 .photo-card img { 
@@ -199,7 +167,6 @@ body {
     color: #4b5563; 
     margin-bottom: 25px; 
 }
-
 .btn-outline { 
     border: 2.5px solid var(--brand-blue); 
     color: var(--brand-blue); 
@@ -210,55 +177,44 @@ body {
     margin-left: 15px;
     transition: 0.3s; 
 }
-
-/* ============================================================
-   FORMAÇÃO & PROJETOS (CAIXAS E FONTES GRANDES)
-   ============================================================ */
 .services-section, .projects-section { 
     padding: 120px 10%; 
     text-align: center; 
 }
-
 .services-grid, .projects-grid { 
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
     gap: 40px; 
     margin-top: 60px; 
 }
-
 .service-card, .project-card { 
     background: var(--white); 
-    padding: 65px 50px; /* Aumento do espaço interno */
+    padding: 65px 50px; 
     border-radius: 25px; 
     box-shadow: 0 15px 35px rgba(0,0,0,0.06); 
     transition: 0.4s; 
     border: 1px solid #e2e8f0;
 }
-
 .service-card:hover, .project-card:hover { 
     transform: translateY(-12px); 
     border-color: var(--brand-blue);
 }
-
 .service-card i, .project-icon { 
-    font-size: 4.5rem; /* Ícones grandes */
+    font-size: 4.5rem; 
     color: var(--brand-blue); 
     margin-bottom: 30px; 
 }
-
 .service-card h3, .project-card h3 {
-    font-size: 2rem; /* Títulos grandes */
+    font-size: 2rem; 
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
-
 .service-card p, .project-card p {
-    font-size: 1.25rem; /* Texto de leitura claro */
+    font-size: 1.25rem; 
     color: #4b5563;
     line-height: 1.8;
 }
-
 .project-card { text-align: left; }
 
 .project-tags { 
@@ -267,7 +223,6 @@ body {
     gap: 12px; 
     margin: 25px 0 35px; 
 }
-
 .project-tags span { 
     background: #e2e8f0; 
     color: var(--brand-blue); 
@@ -276,42 +231,33 @@ body {
     padding: 8px 18px; 
     border-radius: 50px; 
 }
-
 .btn-project { 
     text-decoration: none; 
     color: var(--brand-blue); 
     font-weight: 800; 
     font-size: 1.1rem;
 }
-
-/* ============================================================
-   FOOTER (AMPLIADO)
-   ============================================================ */
 .main-footer { 
     background-color: #111827; 
     padding: 80px 10% 40px; 
     color: var(--white); 
     text-align: center; 
 }
-
 .footer-socials { 
     display: flex; 
     justify-content: center; 
     gap: 40px; 
     margin-bottom: 40px; 
 }
-
 .footer-socials a { 
     color: var(--white); 
     font-size: 2.5rem; /* Ícones do footer grandes */
     transition: 0.3s; 
 }
-
 .footer-socials a:hover { 
     color: var(--brand-blue); 
     transform: scale(1.15); 
 }
-
 .copyright { 
     font-size: 1rem; 
     color: #94a3b8; 
