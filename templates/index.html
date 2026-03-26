@@ -3,200 +3,422 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maysa Eduarda Lada</title>
+    <title>Maysa Eduarda Lada | Software Developer</title>
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='animacao.png') }}?v=3">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-    <header class="navbar-container">
-        <nav class="navbar">
-            <div class="logo">&lt;YS4<span>DuDa</span>/&gt;</div>
-            <ul class="nav-links">
-                <li><a href="#hero">HOME</a></li>
-                <li><a href="#sobre">SOBRE</a></li>
-                <li><a href="#formacao">FORMAÇÃO</a></li>
-                <li><a href="#competencias">COMPETÊNCIAS</a></li>
-                <li><a href="#cursos">CURSOS</a></li>
-                <li><a href="#projetos">PROJETOS</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="https://linkedin.com/in/maysa-eduarda-lada-819705269" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/YS4DuDA" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://instagram.com/iammaysadev" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:mayeduardalada@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://wa.me/5544999213541" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </nav>
-    </header>
+    <div class="bg-particles"></div>
+    <div class="mouse-glow"></div>
 
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <span class="badge">Seja Bem-Vindo(a)</span>
-            <h1 class="hero-title">Conheça Maysa Eduarda Lada, Desenvolvedora Full Stack e Analista de Infraestrutura e Suporte</h1>
-            <a href="#sobre" class="btn-main">Saiba Mais</a>
-        </div>
-        <div class="hero-image">
-            <img src="{{ url_for('static', filename='YS4DuDa.png') }}" alt="Maysa Eduarda Lada">
-        </div>
-    </section>
+    <div class="content-wrapper">
 
-    <section id="sobre" class="about-section">
-        <div class="about-container">
-            <div class="about-photos-grid">
-                <div class="photo-card"><img src="{{ url_for('static', filename='YS4DuDa2.png') }}" alt="Maysa Eduarda"></div>
-                <div class="photo-card"><img src="{{ url_for('static', filename='dragon_programer.png') }}" alt="Dragão Programador"></div>
-                <div class="photo-card"><img src="{{ url_for('static', filename='Apresentacao.png') }}" alt="Apresentação"></div>
-            </div>
-            <div class="about-text">
-                <span class="badge">Perfil Profissional</span>
-                <h2 class="section-title">Muito prazer, sou a Maysa.</h2>
-                <p>A minha paixão e o meu grande foco na tecnologia é o desenvolvimento de software. Dedico-me continuamente à criação de projetos Full Stack, utilizando principalmente Python para construir aplicações web, resolver problemas do dia a dia e automatizar processos.</p>
-                <p>Atuei na área de suporte de TI numa indústria de grande porte, o que me trouxe uma base sólida e conhecimentos práticos em infraestrutura e redes.</p>
-                <div class="about-buttons">
-                    <a href="https://wa.me/5544999213541" target="_blank" class="btn-main">WhatsApp</a>
-                    <a href="mailto:mayeduardalada@gmail.com" class="btn-outline">E-mail</a>
+        <header class="navbar-wrapper">
+            <nav class="glass-nav">
+                <div class="logo">&lt;YS4<span>DuDa</span>/&gt;</div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#competencias">Skills</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#trajetoria">Trajetória</a></li>
+                    <li><a href="#lado-b">Lado B</a></li>
+                </ul>
+                <div class="nav-socials">
+                    <a href="https://linkedin.com/in/maysa-eduarda-lada-819705269" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/YS4DuDA" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/iammaysadev" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </nav>
+        </header>
+
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="glow-badge">Seja Bem-Vindo(a)</div>
+                <h1 class="hero-title">Desenvolvedora<br><span>Full Stack.</span></h1>
+                <p class="hero-subtitle">Conheça Maysa Eduarda Lada. Transformando lógica em soluções eficientes com Python, análise de sistemas e infraestrutura.</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/5544999213541" target="_blank" class="btn-primary">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="mailto:mayeduardalada@gmail.com" class="btn-secondary">
+                        <i class="fas fa-envelope"></i> E-mail
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="hero-image-wrapper">
+                <div class="image-glow"></div>
+                <img src="{{ url_for('static', filename='YS4DuDa.png') }}" alt="Maysa Eduarda Lada" class="hero-img">
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Role para explorar</p>
+            </div>
+        </section>
 
-    <section id="formacao" class="services-section">
-        <span class="badge">Qualificações</span>
-        <h2 class="section-title">Formação Acadêmica</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-code"></i>
-                <h3>Sistemas</h3>
-                <p>Análise e Desenvolvimento de Sistemas. Foco em engenharia de software.</p>
-                <p><strong>Instituição:</strong> Centro Integrado de Campo Mourão, PR</p>
+        <section id="sobre" class="about-section section-padding">
+            <div class="container about-grid">
+                <div class="about-visuals">
+                    <div class="visual-stack">
+                        <div class="stack-item item-1">
+                            <img src="{{ url_for('static', filename='YS4DuDa2.png') }}" alt="Maysa Eduarda">
+                        </div>
+                        <div class="stack-item item-2">
+                            <img src="{{ url_for('static', filename='dragon_programer.png') }}" alt="Dragão Programador">
+                        </div>
+                        <div class="stack-item item-3">
+                            <img src="{{ url_for('static', filename='Apresentacao.png') }}" alt="Apresentação">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="glow-badge">Perfil Profissional</div>
+                    <h2 class="section-title">Muito prazer,<br>sou a <span>Maysa.</span></h2>
+                    <div class="about-paragraphs">
+                        <p>A minha paixão e o meu grande foco na tecnologia é o desenvolvimento de software. Dedico-me continuamente à criação de projetos Full Stack, utilizando principalmente Python para construir aplicações web, resolver problemas do dia a dia e automatizar processos.</p>
+                        <p>Atuei na área de suporte de TI numa indústria de grande porte, o que me trouxe uma base sólida e conhecimentos práticos em infraestrutura e redes.</p>
+                    </div>
+                </div>
             </div>
-            <div class="service-card">
-                <i class="fas fa-network-wired"></i>
-                <h3>Infraestrutura</h3>
-                <p>Redes de Computadores. Especialização em conectividade e segurança.</p>
-                <p><strong>Instituição:</strong> Cruzeiro do Sul (EAD)</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Desenvolvimento Full Stack</h3>
-                <p>Formação completa em desenvolvimento web, unindo front-end e back-end.</p>
-                <p><strong>Instituição:</strong> Cruzeiro do Sul (EAD)</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="competencias" class="competencias-section">
-        <div class="about-container competencias-wrapper">
-            <div class="competencias-text">
-                <span class="badge">Habilidades</span>
-                <h2 class="section-title" style="text-align: left;">Minhas Competências</h2>
-                <div class="competencias-cards-list">
-                    <div class="service-card mini-card">
-                        <i class="fas fa-code"></i>
-                        <div>
-                            <h3>Desenvolvimento</h3>
-                            <p>HTML, CSS, JavaScript, TypeScript, React, Python e integração com APIs.</p>
-                            <div class="tech-icons">
-                                <i class="fab fa-html5" title="HTML5" style="color: #E34F26;"></i>
-                                <i class="fab fa-css3-alt" title="CSS3" style="color: #1572B6;"></i>
-                                <i class="fab fa-js" title="JavaScript" style="color: #F7DF1E;"></i>
-                                <span class="ts-badge" title="TypeScript">TS</span>
-                                <i class="fab fa-react" title="React" style="color: #61DAFB;"></i>
-                                <i class="fab fa-python" title="Python" style="color: #3776AB;"></i>
+        <section id="competencias" class="section-padding">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 30px;">
+                    <h2 class="section-title">Minhas <span>Competências</span></h2>
+                    <p>Pressione e arraste no globo para explorar as ferramentas</p>
+                </div>
+                <div class="sphere-scene" id="sphere-scene">
+                    <div class="sphere-back-ring"></div>
+                    <div class="sphere-wrapper" id="sphere-wrapper"></div>
+                    <div class="grab-ui-indicator">Arraste</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cursos" class="section-padding">
+            <div class="container text-center">
+                <div class="glow-badge">Educação Contínua</div>
+                <h2 class="section-title">Pilares de <span>Especialização</span></h2>
+                
+                <div class="experience-wrapper">
+                    <div class="cyber-cards-grid">
+                        <div class="cyber-card">
+                            <div class="cyber-content">
+                                <div class="cyber-icon-box"><i class="fas fa-laptop-code"></i></div>
+                                <h3 class="cyber-title">Qualidade e Automação</h3>
+                                <ul class="cyber-list">
+                                    <li style="--i: 1"><i class="fas fa-angle-right"></i> <span>Automação de Testes (API & Front)</span></li>
+                                    <li style="--i: 2"><i class="fas fa-angle-right"></i> <span>Testes Funcionais e Segurança</span></li>
+                                    <li style="--i: 3"><i class="fas fa-angle-right"></i> <span>Engenharia de Software</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cyber-card">
+                            <div class="cyber-content">
+                                <div class="cyber-icon-box"><i class="fas fa-project-diagram"></i></div>
+                                <h3 class="cyber-title">Operações e Negócios</h3>
+                                <ul class="cyber-list">
+                                    <li style="--i: 1"><i class="fas fa-angle-right"></i> <span>Logística e Logística Reversa</span></li>
+                                    <li style="--i: 2"><i class="fas fa-angle-right"></i> <span>Produção e Estocagem</span></li>
+                                    <li style="--i: 3"><i class="fas fa-angle-right"></i> <span>Contabilidade e Custos</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cyber-card">
+                            <div class="cyber-content">
+                                <div class="cyber-icon-box"><i class="fas fa-users-cog"></i></div>
+                                <h3 class="cyber-title">Gestão e Processos</h3>
+                                <ul class="cyber-list">
+                                    <li style="--i: 1"><i class="fas fa-angle-right"></i> <span>Liderança e Aprimoramento</span></li>
+                                    <li style="--i: 2"><i class="fas fa-angle-right"></i> <span>Automação (VBA e Scripts)</span></li>
+                                    <li style="--i: 3"><i class="fas fa-angle-right"></i> <span>Saúde, Segurança e Meio Ambiente</span></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="service-card mini-card">
-                        <i class="fas fa-desktop"></i>
-                        <div>
-                            <h3>TI & Suporte</h3>
-                            <p>Suporte técnico, manutenção de computadores, redes básicas e Service Desk.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section-padding">
+            <div class="container text-center">
+                <div class="glow-badge">Meu Portfólio</div>
+                <h2 class="section-title">Projetos e <span>Soluções</span></h2>
+                <p style="margin-bottom: 40px;">Sistemas práticos focados em resolver problemas reais de logística e operação.</p>
+                
+                <div class="projects-grid-duo">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='inovatech.png') }}" alt="Tela do sistema InovaTech">
+                        </div>
+                        <div class="project-content">
+                            <h3>InovaTech (WMS)</h3>
+                            <p>Sistema focado na gestão de ativos e otimização de fluxo de almoxarifado. Rastreamento de operações logísticas e processos de estocagem de ponta a ponta.</p>
+                            <div class="tech-tags">
+                                <span>Python</span><span>Logística</span><span>Automação</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/YS4DuDA/Inovatech-Gestao-de-Ativos" target="_blank" class="btn-github">
+                                    <i class="fab fa-github"></i> Ver Código
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="service-card mini-card">
-                        <i class="fas fa-file-excel"></i>
-                        <div>
-                            <h3>Ferramentas</h3>
-                            <p>Domínio do Pacote Office e planilhas eletrónicas para organização e análise de dados.</p>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='frigorifico.jpg') }}" alt="Tela do Controle Operacional Magistral">
+                        </div>
+                        <div class="project-content">
+                            <h3>Controle Operacional P/ Frigorifíco</h3>
+                            <p>Painel de controle voltado para a logística industrial e o fluxo de produção. Otimiza a leitura de dados operacionais e auxilia na tomada de decisão rápida.</p>
+                            <div class="tech-tags">
+                                <span>Gestão</span><span>Dashboard</span><span>Processos</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/YS4DuDA/Controle_Operacional_Magistral" target="_blank" class="btn-github">
+                                    <i class="fab fa-github"></i> Ver Código
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="competencias-photos">
-                <div class="photo-card"><img src="{{ url_for('static', filename='Infraestrutura.jpg') }}" alt="Trabalhando"></div>
-                <div class="photo-card"><img src="{{ url_for('static', filename='Coding.jpg') }}" alt="Setup ou Código"></div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="cursos" class="services-section">
-        <span class="badge">Educação Contínua</span>
-        <h2 class="section-title">Cursos Complementares & Idiomas</h2>
-        <div class="courses-container">
-            <div class="language-card">
-                <i class="fas fa-language"></i>
-                <div>
-                    <h3>Idioma</h3>
-                    <p><strong>Inglês:</strong> Nível Intermediário (KNN Idiomas)</p>
+        <section id="trajetoria" class="section-padding">
+            <div class="container text-center">
+                <div class="glow-badge">Evolução</div>
+                <h2 class="section-title">Minha <span>Trajetória</span></h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Trainee de TI</h3>
+                            <h4>Indústria Multinacional de Grande Porte</h4>
+                            <p>Atuação focada em suporte técnico avançado, infraestrutura e gestão de redes, unindo a visão operacional com soluções tecnológicas em um ambiente industrial complexo.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Graduações em Tecnologia</h3>
+                            <h4>Análise e Desenvolvimento de Sistemas & Redes de Computadores</h4>
+                            <p>Formação acadêmica dupla que me garante uma visão completa do ecossistema de TI: desde a engenharia de software e codificação até a infraestrutura de servidores e nuvem.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Auxiliar Técnico de TI & Aprendizagem SENAI</h3>
+                            <h4>Manutenção e Hardware</h4>
+                            <p>Onde construí minha base sólida. Experiência prática com manutenção de computadores, recarga de toners, montagem de infraestrutura e o rigor técnico da indústria pelo SENAI.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="courses-list">
-                <ul>
-                    <li><i class="fas fa-desktop"></i> Informática Básica</li>
-                    <li><i class="fas fa-file-excel"></i> Planilhas Eletrônicas</li>
-                    <li><i class="fas fa-award"></i> Ferramentas da Qualidade</li>
-                    <li><i class="fas fa-user-tie"></i> Conceitos de Liderança</li>
-                    <li><i class="fas fa-handshake"></i> Excelência no Atendimento e Trabalho em Equipe</li>
-                    <li><i class="fas fa-list-check"></i> Organização e Preparação para o Trabalho</li>
-                    <li><i class="fas fa-arrow-trend-up"></i> Aprimoramento Profissional</li>
-                    <li><i class="fas fa-calculator"></i> Fundamentos da Contabilidade e Custos</li>
-                    <li><i class="fas fa-lightbulb"></i> Gestão de Marketing, Vendas e Empreendedorismo</li>
-                    <li><i class="fas fa-truck-fast"></i> Operações Logísticas</li>
-                    <li><i class="fas fa-industry"></i> Planejamento de Produção</li>
-                    <li><i class="fas fa-warehouse"></i> Processos Produtivos e Estocagem</li>
-                    <li><i class="fas fa-recycle"></i> Logística Reversa e Sustentável</li>
-                    <li><i class="fas fa-scale-balanced"></i> Ética, Cidadania e Meio Ambiente</li>
-                    <li><i class="fas fa-helmet-safety"></i> Saúde e Segurança do Trabalho</li>
-                    <li><i class="fas fa-square-root-variable"></i> Fundamentos da Matemática</li>
-                    <li><i class="fas fa-comments"></i> Fundamentos de Comunicação Oral e Escrita</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projetos" class="projects-section">
-        <span class="badge">Portfólio</span>
-        <h2 class="section-title">Casos de Sucesso</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-boxes-stacked"></i></div>
-                <h3>InvistaPro Gestão de Ativos</h3>
-                <p>Sistema WMS. Focado em otimizar o controle de inventário industrial e eliminar gargalos operacionais.</p>
-                <div class="project-tags"><span>WMS</span><span>Gestão</span></div>
-                <a href="https://github.com/YS4DuDA/Controle_Operacional_MagistralInovatech-Gestao-de-Ativos" target="_blank" class="btn-project">Ver no GitHub <i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-truck-ramp-box"></i></div>
-                <h3>Sistema P/ Indústria Frigorífica</h3>
-                <p>Solução para gestão de embarque e descanso pré-abate, garantindo conformidade com normas de bem-estar animal.</p>
-                <div class="project-tags"><span>Logística</span><span>Compliance</span></div>
-                <a href="https://github.com/YS4DuDA/Controle_Operacional_Magistral" target="_blank" class="btn-project">Ver no GitHub <i class="fas fa-external-link-alt"></i></a>
-            </div>
-        </div>
-    </section>
+        <section id="lado-b" class="section-padding">
+            <div class="container text-center">
+                <div class="glow-badge">Além do Código</div>
+                <h2 class="section-title">Meu <span>Lado B</span></h2>
+                <p style="margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Um pouco do que me inspira, me diverte e faz parte da minha rotina quando desligo os monitores.</p>
+                
+                <div class="b-side-container">
+                    
+                    <div class="b-side-item">
+                        <div class="b-icon-wrapper floating-icon"><i class="fas fa-gamepad"></i></div>
+                        <h3>Mundo Gamer</h3>
+                        <p>Apaixonada por histórias interativas. De explorar tudo em <strong>Hollow Knight</strong> e <strong>Red Dead Redemption</strong> a viver as narrativas de <strong>Life is Strange</strong> e <strong>Detroit: Become Human</strong>. É o meu momento favorito para desconectar.</p>
+                    </div>
 
-    <footer class="main-footer">
-        <div class="footer-socials">
-            <a href="https://linkedin.com/in/maysa-eduarda-lada-819705269" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/YS4DuDA" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://instagram.com/iammaysadev" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:mayeduardalada@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://wa.me/5544999213541" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        <p class="copyright">2026 | Maysa Eduarda Lada | Todos os direitos reservados</p>
-    </footer>
+                    <div class="b-side-item">
+                        <div class="b-icon-wrapper floating-icon" style="animation-delay: 0.2s;"><i class="fas fa-dragon"></i></div>
+                        <h3>Fã de Dragões</h3>
+                        <p>Fascinada pelo universo de fantasia e animações! Meu filme de conforto absoluto é <strong>"Como Treinar Seu Dragão"</strong>. Amo mergulhar em mundos imaginários nas horas vagas.</p>
+                    </div>
+
+                    <div class="b-side-item">
+                        <div class="b-icon-wrapper floating-icon" style="animation-delay: 0.4s;"><i class="fas fa-dice-d20"></i></div>
+                        <h3>RPG de Mesa</h3>
+                        <p>Sempre pronta para rolar um D20! Amo a criatividade, o trabalho em equipe e a bagunça organizada que só uma boa sessão de RPG com amigos consegue render.</p>
+                    </div>
+
+                    <div class="b-side-item">
+                        <div class="b-icon-wrapper floating-icon" style="animation-delay: 0.6s;"><i class="fas fa-microchip"></i></div>
+                        <h3>Entusiasta de Hardware</h3>
+                        <p>Adoro fuçar em eletrônicos, entender como funcionam por dentro, montar setups e acompanhar as novidades tecnológicas do mercado.</p>
+                    </div>
+
+                    <div class="b-side-item">
+                        <div class="b-icon-wrapper floating-icon" style="animation-delay: 0.8s;"><i class="fas fa-cat"></i></div>
+                        <h3>Cores, Gatos e Animes</h3>
+                        <p>Totalmente obcecada pela cor <strong>Azul</strong>. Minha rotina inclui maratonar animes, séries e ter meus gatos como fiéis "supervisores" em cima do meu teclado.</p>
+                    </div>
+
+                    <div class="b-side-item">
+                        <div class="b-icon-wrapper floating-icon" style="animation-delay: 1s;"><i class="fas fa-pen-nib"></i></div>
+                        <h3>Tatuagens</h3>
+                        <p>Amo a arte na pele. Minhas tatuagens são a forma mais sincera que encontrei de expressar minha identidade e marcar as coisas que eu realmente amo.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <img src="{{ url_for('static', filename='animacao.png') }}" alt="Maysa Eduarda" class="footer-avatar">
+                    <div class="logo">&lt;YS4<span>DuDa</span>/&gt;</div>
+                    <p>Transformando lógica em soluções logísticas e sistêmicas. Otimizando negócios através de tecnologia de ponta e código limpo.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#hero"><i class="fas fa-chevron-right"></i> Início</a></li>
+                        <li><a href="#sobre"><i class="fas fa-chevron-right"></i> Sobre Mim</a></li>
+                        <li><a href="#projetos"><i class="fas fa-chevron-right"></i> Projetos</a></li>
+                        <li><a href="#trajetoria"><i class="fas fa-chevron-right"></i> Trajetória</a></li>
+                        <li><a href="#lado-b"><i class="fas fa-chevron-right"></i> Lado B</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contato Direto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Campo Mourão, PR - Brasil</p>
+                    <p><i class="fas fa-envelope"></i> mayeduardalada@gmail.com</p>
+                    <p><i class="fab fa-whatsapp"></i> (44) 99921-3541</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/maysa-eduarda-lada-819705269" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/YS4DuDA" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/iammaysadev" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="copyright">Desenvolvido com <i class="fas fa-heart" style="color: var(--brand-blue); margin: 0 3px;"></i> e Python por Maysa Eduarda Lada &copy; 2026</p>
+            </div>
+            
+            <a href="#hero" class="back-to-top" title="Voltar ao início">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        const glow = document.querySelector('.mouse-glow');
+        const particles = document.querySelector('.bg-particles');
+        
+        document.addEventListener('mousemove', (e) => {
+            const x = `${e.clientX}px`;
+            const y = `${e.clientY}px`;
+            glow.style.setProperty('--mouse-x', x);
+            glow.style.setProperty('--mouse-y', y);
+            particles.style.setProperty('--mouse-x', x);
+            particles.style.setProperty('--mouse-y', y);
+        });
+
+        const sr = ScrollReveal({ distance: '40px', duration: 1000, easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)' });
+        
+        sr.reveal('.hero-content', { delay: 200, origin: 'bottom' });
+        sr.reveal('.hero-image-wrapper', { delay: 400, origin: 'right' });
+        sr.reveal('.about-visuals', { delay: 200, origin: 'left' });
+        sr.reveal('.about-content', { delay: 400, origin: 'right' });
+        sr.reveal('.sphere-scene', { delay: 200, scale: 0.8, duration: 1200 });
+        sr.reveal('.cyber-card', { delay: 100, origin: 'bottom', interval: 200 });
+        sr.reveal('.project-card', { delay: 100, origin: 'bottom', interval: 200 });
+        sr.reveal('.timeline-item', { delay: 100, origin: 'left', interval: 250 });
+        sr.reveal('.b-side-item', { delay: 100, origin: 'bottom', interval: 150 });
+        sr.reveal('.footer-grid > div', { delay: 100, origin: 'bottom', interval: 150 });
+
+        const techData = [
+            { icon: 'fab fa-python', name: 'Python', color: '#3776AB' },
+            { icon: 'fab fa-js', name: 'JavaScript', color: '#F7DF1E' },
+            { icon: 'fab fa-html5', name: 'HTML5', color: '#E34F26' },
+            { icon: 'fab fa-css3-alt', name: 'CSS3', color: '#1572B6' },
+            { icon: 'fab fa-react', name: 'React', color: '#61DAFB' },
+            { icon: 'fab fa-node-js', name: 'Node.js', color: '#68A063' },
+            { icon: 'fab fa-docker', name: 'Docker', color: '#2496ED' },
+            { icon: 'fab fa-git-alt', name: 'Git', color: '#F05032' },
+            { icon: 'fas fa-database', name: 'SQL', color: '#00758F' },
+            { icon: 'fas fa-flask', name: 'Flask', color: '#ffffff' },
+            { icon: 'fas fa-file-excel', name: 'VBA', color: '#217346' },
+            { icon: 'fas fa-network-wired', name: 'Redes', color: '#00b8d9' },
+            { icon: 'fas fa-server', name: 'Infra', color: '#8794a6' },
+            { icon: 'fas fa-cloud', name: 'Cloud', color: '#0089D6' },
+            { icon: 'fab fa-linux', name: 'Linux', color: '#FCC624' }
+        ];
+
+        const scene = document.getElementById('sphere-scene');
+        const wrapper = document.getElementById('sphere-wrapper');
+        const radius = window.innerWidth < 768 ? 140 : 210; 
+
+        let items = [];
+
+        techData.forEach((data, i) => {
+            const k = i + 0.5;
+            const phi = Math.acos(1 - 2 * k / techData.length);
+            const theta = Math.PI * (1 + Math.sqrt(5)) * k;
+
+            const x = radius * Math.cos(theta) * Math.sin(phi);
+            const y = radius * Math.sin(theta) * Math.sin(phi);
+            const z = radius * Math.cos(phi);
+
+            const item = document.createElement('div');
+            item.className = 'sphere-item';
+
+            const iconEl = document.createElement('i');
+            iconEl.className = data.icon;
+            iconEl.style.color = data.color;
+            iconEl.style.textShadow = `0 0 15px ${data.color}`;
+
+            const textEl = document.createElement('span');
+            textEl.textContent = data.name;
+
+            item.appendChild(iconEl);
+            item.appendChild(textEl);
+            wrapper.appendChild(item);
+            
+            items.push({ el: item, x, y, z });
+        });
+
+        let isDragging = false, previousMouseX = 0, previousMouseY = 0, vX = 0.003, vY = 0.003; 
+
+        const startDrag = (e) => { isDragging = true; scene.classList.add('grabbing'); previousMouseX = e.pageX || e.touches[0].pageX; previousMouseY = e.pageY || e.touches[0].pageY; };
+        const stopDrag = () => { isDragging = false; scene.classList.remove('grabbing'); };
+        const drag = (e) => { if (!isDragging) return; e.preventDefault(); const x = e.pageX || e.touches[0].pageX; const y = e.pageY || e.touches[0].pageY; vY = (x - previousMouseX) * 0.005; vX = (y - previousMouseY) * 0.005; previousMouseX = x; previousMouseY = y; };
+
+        scene.addEventListener('mousedown', startDrag); window.addEventListener('mouseup', stopDrag); window.addEventListener('mousemove', drag);
+        scene.addEventListener('touchstart', startDrag, {passive: false}); window.addEventListener('touchend', stopDrag); window.addEventListener('touchmove', drag, {passive: false});
+
+        function animateSphere() {
+            if (!isDragging) { vX = vX * 0.95 + 0.002 * 0.05; vY = vY * 0.95 + 0.002 * 0.05; }
+            const sinX = Math.sin(vX), cosX = Math.cos(vX), sinY = Math.sin(vY), cosY = Math.cos(vY);
+            items.forEach(item => {
+                let x1 = item.x, y1 = item.y * cosX - item.z * sinX, z1 = item.z * cosX + item.y * sinX;
+                let x2 = x1 * cosY + z1 * sinY, y2 = y1, z2 = z1 * cosY - x1 * sinY;
+                item.x = x2; item.y = y2; item.z = z2;
+                const scale = (radius + item.z) / (2 * radius) * 0.6 + 0.4;
+                const opacity = (radius + item.z) / (2 * radius) * 0.8 + 0.2;
+                item.el.style.transform = `translate3d(${item.x}px, ${item.y}px, 0) scale(${scale})`;
+                item.el.style.opacity = opacity;
+                item.el.style.zIndex = Math.round(item.z + radius);
+            });
+            requestAnimationFrame(animateSphere);
+        }
+        animateSphere();
+    </script>
 </body>
 </html>
